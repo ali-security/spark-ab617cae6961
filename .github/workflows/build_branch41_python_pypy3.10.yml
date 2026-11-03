@@ -20,8 +20,6 @@
 name: "Build / Python-only (branch-4.1, PyPy 3.10)"
 
 on:
-  schedule:
-    - cron: '0 16 * * *'
   workflow_dispatch:
 
 jobs:

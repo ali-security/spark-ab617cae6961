@@ -20,8 +20,6 @@
 name: "Build / Python-only (master, Python 3.12, Pandas 3)"
 
 on:
-  schedule:
-    - cron: '0 21 * * *'
   workflow_dispatch:
 
 jobs:

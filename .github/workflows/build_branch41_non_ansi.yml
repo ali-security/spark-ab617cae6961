@@ -20,8 +20,6 @@
 name: "Build / Non-ANSI (branch-4.1, Hadoop 3, JDK 17, Scala 2.13)"
 
 on:
-  schedule:
-    - cron: '0 2 * * *'
   workflow_dispatch:
 
 jobs:

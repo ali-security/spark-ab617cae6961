@@ -20,8 +20,6 @@
 name: "Build / Python-only (master, Python 3.13)"
 
 on:
-  schedule:
-    - cron: '0 20 * * *'
   workflow_dispatch:
 
 jobs:

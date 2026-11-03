@@ -20,8 +20,6 @@
 name: "Build / Python Coverage (master, Python 3.12)"
 
 on:
-  schedule:
-    - cron: '0 10 * * *'
   workflow_dispatch:
 
 jobs:

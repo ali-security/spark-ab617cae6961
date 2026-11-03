@@ -21,28 +21,9 @@ name: Build / Cache base image
 
 on:
   # Run jobs when a commit is merged
-  push:
-    branches:
-    - 'master'
-    - 'branch-*'
-    paths:
-    - 'dev/infra/Dockerfile'
-    - 'dev/spark-test-image/docs/Dockerfile'
-    - 'dev/spark-test-image/lint/Dockerfile'
-    - 'dev/spark-test-image/sparkr/Dockerfile'
-    - 'dev/spark-test-image/python-minimum/Dockerfile'
-    - 'dev/spark-test-image/python-310/Dockerfile'
-    - 'dev/spark-test-image/python-311/Dockerfile'
-    - 'dev/spark-test-image/python-312/Dockerfile'
-    - 'dev/spark-test-image/python-312-classic-only/Dockerfile'
-    - 'dev/spark-test-image/python-312-pandas-3/Dockerfile'
-    - 'dev/spark-test-image/python-313/Dockerfile'
-    - 'dev/spark-test-image/python-314/Dockerfile'
-    - 'dev/spark-test-image/python-314-nogil/Dockerfile'
-    - '.github/workflows/build_infra_images_cache.yml'
   # Create infra image when cutting down branches/tags
-  create:
   workflow_dispatch:
+
 jobs:
   main:
     if: github.repository == 'apache/spark'
